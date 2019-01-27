@@ -39,6 +39,9 @@ rr_tc2:	rr_tc2.c aux.h umix.h mycode2.o
 rr_tc3:	rr_tc3.c aux.h umix.h mycode2.o
 	$(CC) $(FLAGS) -o rr_tc3 rr_tc3.c mycode2.o
 
+prop_tc1:	prop_tc1.c aux.h umix.h mycode2.o
+	$(CC) $(FLAGS) -o prop_tc1 prop_tc1.c mycode2.o
+
 mycode2.o:	mycode2.c aux.h sys.h mycode2.h
 	$(CC) $(FLAGS) -c mycode2.c
 

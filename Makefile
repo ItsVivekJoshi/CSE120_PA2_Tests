@@ -10,7 +10,7 @@ PA2 =	pa2a pa2b pa2c
 LIFO_TESTS	= lifo_tc1
 FIFO_TESTS	= fifo_tc1
 RR_TESTS	= rr_tc1 rr_tc2 rr_tc3
-PROP_TESTS	= prop_tc1 prop_tc2 prop_tc3 prop_tc4 prop_tc5
+PROP_TESTS	= prop_tc1 prop_tc2 prop_tc3 prop_tc4 prop_tc5 prop_tc6
 
 TESTS	= $(LIFO_TESTS) $(FIFO_TESTS) $(RR_TESTS) $(PROP_TESTS)
 
@@ -54,6 +54,9 @@ prop_tc4:	prop_tc4.c aux.h umix.h mycode2.o
 
 prop_tc5:	prop_tc5.c aux.h umix.h mycode2.o
 	$(CC) $(FLAGS) -o prop_tc5 prop_tc5.c mycode2.o
+
+prop_tc6:	prop_tc6.c aux.h umix.h mycode2.o
+	$(CC) $(FLAGS) -o prop_tc6 prop_tc6.c mycode2.o
 
 mycode2.o:	mycode2.c aux.h sys.h mycode2.h
 	$(CC) $(FLAGS) -c mycode2.c

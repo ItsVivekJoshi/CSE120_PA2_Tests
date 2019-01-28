@@ -58,6 +58,9 @@ prop_tc5:	prop_tc5.c aux.h umix.h mycode2.o
 prop_tc6:	prop_tc6.c aux.h umix.h mycode2.o
 	$(CC) $(FLAGS) -o prop_tc6 prop_tc6.c mycode2.o
 
+prop_tc7:	prop_tc7.c aux.h umix.h mycode2.o
+	$(CC) $(FLAGS) -o prop_tc7 prop_tc7.c mycode2.o
+
 mycode2.o:	mycode2.c aux.h sys.h mycode2.h
 	$(CC) $(FLAGS) -c mycode2.c
 

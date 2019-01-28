@@ -44,12 +44,12 @@ void Main ()
 		if (Fork () == 0) {
 			SlowPrintf (5, "7777777777");			// process 7
 			DPrintf("\nProcess %d exiting.\n", 7);
-			Exit ();
 			if (Fork () == 0) {
 				SlowPrintf (5, "8888888888");			// process 8
 				DPrintf("\nProcess %d exiting.\n", 8);
 				Exit ();
 			}
+			Exit ();
 		}
 
 		SlowPrintf (5, "6666666666");			// process 6
